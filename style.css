@@ -11,10 +11,6 @@ body, html{
    text-align: center;
 }
 
-#colorSelector{
-    align-content: center;
-}
-
 #colorBox{
     width: 100px;
     height: 100px;
@@ -37,4 +33,9 @@ body, html{
 }
 #toggleDM:hover{
     background-color: rebeccapurple;
+}
+
+.dark-mode{
+    color: white !important;
+    background-color: darkslategray !important;
 }

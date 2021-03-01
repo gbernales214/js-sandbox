@@ -5,5 +5,11 @@ document.getElementById("colorSelector").onchange = function(){
 };
 
 function toggleDarkMode(){
-    
+    let content = document.getElementById("content");
+    content.classList.toggle("dark-mode");
+
+}
+function teleport(){
+    let runaway = document.getElementById("runaway");
+    runaway.innerText = "it changed";
 }

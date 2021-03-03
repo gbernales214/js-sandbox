@@ -9,7 +9,22 @@ function toggleDarkMode(){
     content.classList.toggle("dark-mode");
 
 }
-function teleport(){
+function teleport(distance){
     let runaway = document.getElementById("runaway");
-    runaway.innerText = "it changed";
+    console.log(runaway.style.top, "-", runaway.style.left);
+    if(runaway.style.top == 0 && runaway.style.left == 0){
+        runaway.style.top = `${distance}px`;
+    }
+    else if(runaway.style.top == `${distance}px` && runaway.style.left == 0){
+        runaway.style.left = `${distance}px`;
+    }
+    else if(runaway.style.top == `${distance}px` && runaway.style.left == `${distance}px`){
+        runaway.style.top = 0;
+    }
+    else if(runaway.style.top == "0px" && runaway.style.left == `${distance}px`){
+        runaway.style.left = null;
+        runaway.style.top = null;
+    }
+    
+    runaway.innerText = "CHANGE ME";
 }
